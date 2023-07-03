@@ -33,7 +33,7 @@
     def index():
         return flask.render_template(
             'index.html',
-            ai_response=""
+            ai_response=''
         )
   ```
 - 動作確認
@@ -56,13 +56,13 @@
         user_msg = request.form['user_msg']
 
         # user_msg を Azure Open AI Service に送信して、返答を取得する
-        openai.api_type = "azure"
-        openai.api_base = "https://maaya-test.openai.azure.com/"
-        openai.api_version = "2023-03-15-preview"
-        openai.api_key = "d8d93xxxxxxxxxxxxxxx"
+        openai.api_type = 'azure'
+        openai.api_base = 'https://maaya-test.openai.azure.com/'
+        openai.api_version = '2023-03-15-preview'
+        openai.api_key = 'd8d93xxxxxxxxxxxxxxx'
 
         response = openai.ChatCompletion.create(
-            engine="test-maaya-35",
+            engine='test-maaya-35',
             messages = [{
                     "role": "system",
                     "content": "あなたは銀行の窓口で働いています。お客様からの問い合わせに対応してください。"
@@ -93,7 +93,7 @@
 - API KEYの設定変更
   - なぜ変更が必要なのかセキュリティの話
 ```python
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai.api_key = os.getenv('OPENAI_API_KEY')
 ```
 
 - コードコミット
