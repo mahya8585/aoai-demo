@@ -38,6 +38,10 @@
             ai_response=''
         )
   ```
+- requrements.txtの作成
+```text
+flask
+```
 - 動作確認
   ```cli
       SET FLASK_APP=app.py
@@ -87,6 +91,10 @@
             ai_response=response_msg
         )
   ```
+- requirements.txtの作成
+```text
+aoai
+```
 - 動作確認
   ```cli
   flask run
