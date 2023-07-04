@@ -4,6 +4,8 @@
 - インターフェースの作成
   - templatesディレクトリ内にindex.htmlを作成
     ```html
+        <!-- demoサイト -->
+        <!-- 入力したテキストをAPIに送付する -->
         <!DOCTYPE html>
         <html lang="ja">
         <head>
