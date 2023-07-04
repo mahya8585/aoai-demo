@@ -3,7 +3,6 @@ from flask import request
 import flask
 import os
 import openai
-import json
 app = Flask(__name__)
 
 
