@@ -1,0 +1,17 @@
+<!-- デモサイト -->
+<!-- 入力したテキストをAPIに送付する -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>デモサイト</title>
+</head>
+<body>
+    <h1>デモサイト</h1>
+    <form action="/chat" method="post">
+        <input type="text" name="user_msg">
+        <input type="submit" value="送信">
+    </form>
+
+    <p>{{ai_response}}</p>
+</body>
